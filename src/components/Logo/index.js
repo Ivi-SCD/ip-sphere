@@ -4,7 +4,7 @@ import "./style.css";
 function Logo() {
   return (
     <div className="logo">
-      <img src={logo} alt="ipsphere-logo"></img>
+      <img src={logo} alt="ipsphere-logo" className="logo-img"></img>
       <p>
         ip<strong>Sphere</strong>
       </p>

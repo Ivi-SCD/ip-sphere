@@ -1,4 +1,13 @@
 * {
-  background-color: rgb(18, 0, 20);
   color: white;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgb(18, 0, 20), rgb(0, 0, 0));
+}
+
+li {
+  list-style-type: none;
 }
