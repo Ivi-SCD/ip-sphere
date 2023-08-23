@@ -1,16 +1,30 @@
-import "./style.css";
+import styled from "styled-components";
 
 const optionsText = ["CATEGORIAS", "FAVORITOS", "MINHA ESTANTE"];
 
+const Options = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+
+const OptionsItem = styled.li`
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5em;
+  cursor: pointer;
+`;
+
 function HeaderOptions() {
   return (
-    <ul className="options">
+    <Options>
       {optionsText.map((text) => (
-        <li className="options-item">
+        <OptionsItem>
           <p className>{text}</p>
-        </li>
+        </OptionsItem>
       ))}
-    </ul>
+    </Options>
   );
 }
 
